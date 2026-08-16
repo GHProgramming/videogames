@@ -1,0 +1,36 @@
+1.
+SELECT AVG(Critic_Score) AS sports_critic_score
+INTO SportsCriticScoreAverage
+FROM videogames
+WHERE Genre = "Sports"
+ 
+SELECT AVG(Critic_Score) AS shooter_critic_score
+INTO ShooterCriticScoreAverage
+FROM videogames
+WHERE Genre = "Shooter"
+ 
+
+2. SELECT AVG(Global_Sales) AS average_global_sales, MIN(Global_Sales) AS min_global_sales, MAX(Global_Sales) as max_global_sales
+INTO GamesGlobalSales
+FROM videogames
+ 
+SELECT AVG(Global_Sales) AS average_global_sales, MIN(Global_Sales) AS min_global_sales, MAX(Global_Sales) as max_global_sales
+INTO SportsGlobalSales
+FROM videogames
+WHERE Genre = "Sports";
+ 
+SELECT AVG(Global_Sales) AS average_global_sales, MIN(Global_Sales) AS min_global_sales, MAX(Global_Sales) as max_global_sales
+INTO ShooterGlobalSales
+FROM videogames
+WHERE Genre = "Shooter";
+ 
+3. SELECT SUM(Global_Sales) AS _max_global_sales, COUNT(Global_Sales) AS count
+INTO SportsGlobalSalesCount
+FROM videogames
+WHERE Genre = "Sports";
+ 
+SELECT SUM(Global_Sales) AS _max_global_sales, COUNT(Global_Sales) AS count
+INTO ShooterGlobalSalesCount
+FROM videogames
+WHERE Genre = "Shooter";
+ 
