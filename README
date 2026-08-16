@@ -1,0 +1,7 @@
+1. The problem that I was analyzing was with the Video Games Datasheet, and how tens of thousnands of videogames compare to each other, either by critic score, 
+or regional/global sales of their games.
+
+2. The insights I found when working on this project is that there is a lot more to creating a system with data than meets the eye. There are many variables you have to
+consider from how to create the database, to maintaining it, deleting it, archiving it, and presenting it in an appealing visual manner to the end-user, or client.
+
+3. The directory structure of the project is complete with the munge folder, a folder for the reports, and a folder for the source code.
