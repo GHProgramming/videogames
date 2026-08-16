@@ -1,0 +1,20 @@
+1.	CREATE TABLE sales_genre
+(
+Genre varchar(50),
+GlobalSales decimal,
+CriticScore int,
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE LOCATION '/Survey'
+TBLPROPERTIES("skip.header.line.count"="1");
+
+2.	SELECT Genre, GlobalSales, CriticScore FROM sales_genre;
+
+3.	SELECT round(GlobalSales, 2) AS GlobalSales_round FROM sales_genre
+
+4.	SELECT * FROM sales_genre WHERE CriticScore > 0
+
+5.	SELECT * FROM sales_genre ORDER BY CriticScore DESC
+
+
